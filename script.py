@@ -47,3 +47,16 @@ def createScript():
       }
 
   return result
+
+while True:
+  record = createScript()
+
+  print("------------------")
+  print(f"Data for {record["Month"]}:")
+  for key, value in record.items():
+    print(f"{key}: {value}")
+  print("------------------")
+
+  action = input("Do you want to enter data for another month? (yes or no): ")  
+  if action == "no":
+    break
