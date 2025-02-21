@@ -35,15 +35,15 @@ def createScript():
 
   result = {
           "Month": month,
-          "Salary": salary,
-          "Savings amount": savings_amount,
-          "Rent amount": rent_amount,
-          "Electricity amount": electricity_amount,
-          "Total of all 3": sum_amount,
-          "Remainder of Salary": remainder,
-          "Yearly rent and Yearly electricity respectively": calcYearly(rent_amount, electricity_amount),
-          "Square salary": squareSalary(salary),
-          "Real remainder": real_remainder
+          "Salary": f"{salary} $",
+          "Savings amount": f"{savings_amount} $",
+          "Rent amount": f"{rent_amount} $",
+          "Electricity amount": f"{electricity_amount} $",
+          "Total of all 3": f"{sum_amount} $",
+          "Remainder of Salary": f"{remainder} $",
+          "Yearly rent and Yearly electricity respectively": f"{calcYearly(rent_amount, electricity_amount)} $",
+          "Square salary": f"{squareSalary(salary)} $",
+          "Real remainder": f"{real_remainder} $"
       }
 
   return result
