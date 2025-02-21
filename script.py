@@ -4,6 +4,12 @@ def calcAmount(percent,salary):
 def totalAmount(savings_amount, rent_amount, electricity_amount):
   return(savings_amount + rent_amount + electricity_amount)
 
+def calcRemainder(salary, sum_amount):
+  return(salary - sum_amount)
+
+def calcYearly(rent_amount, electricity_amount):
+  return(rent_amount * 12, electricity_amount * 12)
+
 
 month = input("Enter the month: ")
 salary = float(input("Enter your salary: "))
@@ -15,5 +21,6 @@ savings_amount = calcAmount(savings, salary)
 rent_amount = calcAmount(rent, salary)
 electricity_amount = calcAmount(electricity, salary)
 
-print(calcAmount(savings, salary))
-print(totalAmount(savings_amount, rent_amount, electricity_amount))
+sum_amount = totalAmount(savings_amount, rent_amount, electricity_amount)
+
+print(calcYearly(rent_amount, electricity_amount))
